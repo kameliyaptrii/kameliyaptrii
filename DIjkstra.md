@@ -52,7 +52,7 @@ int main() {
 
     for(int i = 0; i < vertices; i++) {
         status[i] = false;
-        path_weight[i] = 999;
+        path_weight[i] = 2000;
         path.push_back({});
     }
 
@@ -71,7 +71,7 @@ int main() {
             }
         }
 
-        temp = 999;
+        temp = 2000;
         for(int j = 0; j < vertices; j++) {
             if((status[j] == false) and (temp > path_weight[j])) {
                 temp = path_weight[j];
